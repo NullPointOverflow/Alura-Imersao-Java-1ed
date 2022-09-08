@@ -1,0 +1,34 @@
+package br.com.imersao.java.enumeration;
+
+public enum EscapeANSI {
+
+	NORMALIZADO("\u001b[0m"), NEGRITO("\u001b[1m"), ESVANECIDO("\u001b[2m"), ITALICO("\u001b[3m"),
+	SUBLINHADO("\u001b[4m"), PISCANTE("\u001b[5m"), CORES_INVERTIDAS("\u001b[7m"), RISCADO("\u001b[9m"),
+
+	FONTE_PRETA("\u001b[30m"), FONTE_VERMELHA("\u001b[31m"), FONTE_VERDE("\u001b[32m"), FONTE_AMARELA("\u001b[33m"),
+	FONTE_AZUL("\u001b[34m"), FONTE_MAGENTA("\u001b[35m"), FONTE_CIANO("\u001b[36m"), FONTE_CINZA("\u001b[37m"),
+	FONTE_CINZA_BRILHANTE("\u001b[90m"), FONTE_VERMELHA_BRILHANTE("\u001b[91m"), FONTE_VERDE_BRILHANTE("\u001b[92m"),
+	FONTE_AMARELA_BRILHANTE("\u001b[93m"), FONTE_AZUL_BRILHANTE("\u001b[94m"), FONTE_MAGENTA_BRILHANTE("\u001b[95m"),
+	FONTE_CIANO_BRILHANTE("\u001b[96m"), FONTE_BRANCA("\u001b[97m"),
+
+	FUNDO_PRETO("\u001b[40m"), FUNDO_VERMELHO("\u001b[41m"), FUNDO_VERDE("\u001b[42m"), FUNDO_AMARELO("\u001b[43m"),
+	FUNDO_AZUL("\u001b[44m"), FUNDO_MAGENTA("\u001b[45m"), FUNDO_CIANO("\u001b[46m"), FUNDO_CINZA("\u001b[47m"),
+	FUNDO_CINZA_BRILHANTE("\u001b[100m"), FUNDO_VERMELHO_BRILHANTE("\u001b[101m"), FUNDO_VERDE_BRILHANTE("\u001b[102m"),
+	FUNDO_AMARELO_BRILHANTE("\u001b[103m"), FUNDO_AZUL_BRILHANTE("\u001b[104m"), FUNDO_MAGENTA_BRILHANTE("\u001b[105m"),
+	FUNDO_CIANO_BRILHANTE("\u001b[106m"), FUNDO_BRANCO("\u001b[107m");
+
+	private String escapeCaracter;
+
+	private EscapeANSI(final String escapeCaracter) {
+
+		this.escapeCaracter = escapeCaracter;
+
+	}
+
+	public String getEscapeCaracter() {
+
+		return this.escapeCaracter;
+
+	}
+
+}
